@@ -1589,3 +1589,8 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+mark {
+  background: #04b;
+  color: #fff !important;
+}
