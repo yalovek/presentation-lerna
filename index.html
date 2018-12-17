@@ -28,36 +28,13 @@
 		<div class="slides">
 			<section>Второй подвиг Геракла или встреча с хранителем входа в подземный мир.</section>
 
-			<section data-background-image="/static/hercules.jpg"></section>
+			<section data-background-image="static/hercules.jpg"></section>
 
 			<section>Структура проекта</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
-	static
-		favicon.ico
-		main.js
-	index.html
-				</code></pre>
-			</section>
-
-			<section>
-				<pre><code data-trim data-noescape>
-petshop
-	<mark>pages</mark>
-		<mark>index.js</mark>
-	static
-		favicon.ico
-	<mark>server.js</mark>
-				</code></pre>
-			</section>
-
-			<section>
-				<pre><code data-trim data-noescape>
-petshop
-	<mark>components</mark>
-		<mark>navbar.js</mark>
+dogshop
 	pages
 		index.js
 	static
@@ -68,11 +45,38 @@ petshop
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
+	pages
+		index.js
+		<mark>about.js</mark>
+	static
+		favicon.ico
+	server.js
+				</code></pre>
+			</section>
+
+			<section>
+				<pre><code data-trim data-noescape>
+dogshop
+	<mark>components</mark>
+		<mark>navbar.js</mark>
+	pages
+		index.js
+		about.js
+	static
+		favicon.ico
+	server.js
+				</code></pre>
+			</section>
+
+			<section>
+				<pre><code data-trim data-noescape>
+dogshop
 	components
 		navbar.js
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	<mark>utils</mark>
@@ -84,17 +88,18 @@ petshop
 			<section>Версионирование проекта</section>
 
 			<section>
-				<img src="/static/git.png" />
+				<img src="static/git.png" />
 			</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	<mark>.git</mark>
 	components
 		navbar.js
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
@@ -106,18 +111,19 @@ petshop
 			<section>Зависимости проекта</section>
 
 			<section>
-				<img src="/static/npm.png" />
+				<img src="static/npm.png" />
 			</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	.git
 	components
 		navbar.js
 	<mark>node_modules</mark>
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
@@ -129,13 +135,14 @@ petshop
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	.git
 	components
 		navbar.js
 	node_modules
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
@@ -149,44 +156,53 @@ petshop
 			<section>Сборка проекта</section>
 
 			<section>
-				<img src="/static/webpack.png" />
+				<img src="static/webpack.png" />
 			</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	.git
 	<mark>build</mark>
 	components
 		navbar.js
+	node_modules
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
 		phoneNumber.js
+	.gitignore
+	package.json
 	server.js
 	<mark>webpack.config.js</mark>
 				</code></pre>
 			</section>
 
 			<section>
-				<img src="/static/babel.png" />
+				<img src="static/babel.png" />
 			</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	.git
+	build
 	components
 		navbar.js
+	node_modules
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
 		phoneNumber.js
+	.gitignore
 	<mark>babel.config.js</mark>
+	package.json
 	server.js
 	webpack.config.js
 				</code></pre>
@@ -195,23 +211,28 @@ petshop
 			<section>Форматирование кода</section>
 
 			<section data-background-color="#1a2b34">
-				<img src="/static/prettier.png" />
+				<img src="static/prettier.png" />
 			</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	.git
+	build
 	components
 		navbar.js
+	node_modules
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
 		phoneNumber.js
+	.gitignore
 	<mark>.prettierrc</mark>
 	babel.config.js
+	package.json
 	server.js
 	webpack.config.js
 				</code></pre>
@@ -220,24 +241,29 @@ petshop
 			<section>Проверка кода</section>
 
 			<section data-background-color="#fff">
-				<img src="/static/eslint.png" />
+				<img src="static/eslint.png" />
 			</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	.git
+	build
 	components
 		navbar.js
+	node_modules
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
 		phoneNumber.js
 	<mark>.eslintrc.json</mark>
+	.gitignore
 	.prettierrc
 	babel.config.js
+	package.json
 	server.js
 	webpack.config.js
 				</code></pre>
@@ -246,24 +272,29 @@ petshop
 			<section>Тестирование кода</section>
 
 			<section>
-				<img src="/static/jest.png" width="50%" />
+				<img src="static/jest.png" width="50%" />
 			</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	.git
+	build
 	components
 		navbar.js
+	node_modules
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
 		phoneNumber.js
 	.eslintrc.json
+	.gitignore
 	.prettierrc
 	babel.config.js
+	package.json
 	server.js
 	<mark>test.js</mark>
 	webpack.config.js
@@ -273,27 +304,231 @@ petshop
 			<section>Деплой проекта</section>
 
 			<section data-background-color="#fff">
-				<img src="/static/ansible.svg" />
+				<img src="static/ansible.svg" />
 			</section>
 
 			<section>
 				<pre><code data-trim data-noescape>
-petshop
+dogshop
 	.git
+	build
 	components
 		navbar.js
+	node_modules
 	pages
 		index.js
+		about.js
 	static
 		favicon.ico
 	utils
 		phoneNumber.js
 	.eslintrc.json
+	.gitignore
 	.prettierrc
 	babel.config.js
+	package.json
 	<mark>playbook.yml</mark>
 	server.js
 	test.js
+	webpack.config.js
+				</code></pre>
+			</section>
+
+			<section>Второй проект</section>
+
+			<section>
+				<div style="display: flex;">
+					<pre><code data-trim data-noescape>
+dogshop
+	.git
+	build
+	components
+		navbar.js
+	node_modules
+	pages
+		index.js
+		about.js
+	static
+		favicon.ico
+	utils
+		phoneNumber.js
+	.eslintrc.json
+	.gitignore
+	.prettierrc
+	babel.config.js
+	package.json
+	playbook.yml
+	server.js
+	test.js
+	webpack.config.js
+					</code></pre>
+
+					<pre><code data-trim data-noescape>
+<mark>catshop</mark>
+	<mark>.git</mark>
+	<mark>build</mark>
+	<mark>components</mark>
+		<mark>navbar.js</mark>
+	<mark>node_modules</mark>
+	<mark>pages</mark>
+		<mark>index.js</mark>
+		<mark>about.js</mark>
+	<mark>static</mark>
+		<mark>favicon.ico</mark>
+	<mark>utils</mark>
+		<mark>phoneNumber.js</mark>
+	<mark>.eslintrc.json</mark>
+	<mark>.gitignore</mark>
+	<mark>.prettierrc</mark>
+	<mark>babel.config.js</mark>
+	<mark>package.json</mark>
+	<mark>playbook.yml</mark>
+	<mark>server.js</mark>
+	<mark>test.js</mark>
+	<mark>webpack.config.js</mark>
+					</code></pre>
+				</div>
+			</section>
+
+			<section>Вынос общего кода</section>
+
+			<section data-background-color="#fff">
+				<img src="static/nexus.jpg" />
+			</section>
+
+			<section>
+				<div style="display: flex;">
+					<pre><code data-trim data-noescape>
+dogshop
+	.git
+	build
+	node_modules
+	pages
+		index.js
+		about.js
+	static
+		favicon.ico
+	.eslintrc.json
+	.gitignore
+	<mark>.npmrc</mark>
+	.prettierrc
+	babel.config.js
+	package.json
+	playbook.yml
+	server.js
+	test.js
+	webpack.config.js
+					</code></pre>
+
+					<pre><code data-trim data-noescape>
+catshop
+	.git
+	build
+	node_modules
+	pages
+		index.js
+		about.js
+	static
+		favicon.ico
+	.eslintrc.json
+	.gitignore
+	<mark>.npmrc</mark>
+	.prettierrc
+	babel.config.js
+	package.json
+	playbook.yml
+	server.js
+	test.js
+	webpack.config.js
+					</code></pre>
+				</div>
+			</section>
+
+			<section>
+				<div style="display: flex;">
+					<pre><code data-trim data-noescape>
+components
+	.git
+	navbar
+		index.js
+	node_modules
+	.eslintrc.json
+	.gitignore
+	.npmrc
+	.prettierrc
+	babel.config.js
+	package.json
+	test.js
+	webpack.config.js
+					</code></pre>
+
+					<pre><code data-trim data-noescape>
+utils
+	.git
+	node_modules
+	phoneNumber
+		index.js
+	.eslintrc.json
+	.gitignore
+	.npmrc
+	.prettierrc
+	babel.config.js
+	package.json
+	test.js
+	webpack.config.js
+					</code></pre>
+				</div>
+			</section>
+
+			<section>
+				<pre><code data-trim data-noescape>
+libs
+	.git
+	components
+		navbar.js
+	node_modules
+	utils
+		phoneNumber.js
+	.eslintrc.json
+	.gitignore
+	.npmrc
+	.prettierrc
+	babel.config.js
+	package.json
+	test.js
+	webpack.config.js
+				</code></pre>
+			</section>
+
+			<section>Управление проектами</section>
+
+			<section data-background-color="#fff">
+				<img src="static/lerna.png" />
+			</section>
+
+			<section>
+				<pre><code data-trim data-noescape>
+libs
+	.git
+	node_modules
+	<mark>packages</mark>
+		<mark>components</mark>
+			<mark>navbar.js</mark>
+			<mark>node_modules</mark>
+			<mark>package.json</mark>
+			<mark>test.js</mark>
+		<mark>utils</mark>
+			<mark>node_modules</mark>
+			<mark>package.json</mark>
+			<mark>phoneNumber.js</mark>
+			<mark>test.js</mark>
+	.eslintrc.json
+	.gitignore
+	.npmrc
+	.prettierrc
+	babel.config.js
+	<mark>lerna.json</mark>
+	package.json
 	webpack.config.js
 				</code></pre>
 			</section>
