@@ -33,56 +33,48 @@
 			<section>Структура проекта</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	pages
-		index.js
-	static
-		favicon.ico
-	server.js
-				</code></pre>
+├── pages
+│   └── index.js
+└── server.js
+				</pre>
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	pages
-		index.js
-		<mark>about.js</mark>
-	static
-		favicon.ico
-	server.js
-				</code></pre>
+├── pages
+│   ├── index.js
+│   └── <mark>about.js</mark>
+└── server.js
+				</pre>
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	<mark>components</mark>
-		<mark>navbar.js</mark>
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	server.js
-				</code></pre>
+├── <mark>components</mark>
+│   └── <mark>navbar.js</mark>
+├── pages
+│   ├── index.js
+│   └── about.js
+└── server.js
+				</pre>
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	components
-		navbar.js
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	<mark>utils</mark>
-		<mark>phoneNumber.js</mark>
-	server.js
-				</code></pre>
+├── components
+│   └── navbar.js
+├── pages
+│   ├── index.js
+│   └── about.js
+├── <mark>utils</mark>
+│   └── <mark>phoneNumber.js</mark>
+└── server.js
+				</pre>
 			</section>
 
 			<section>Версионирование проекта</section>
@@ -92,20 +84,18 @@ dogshop
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	<mark>.git</mark>
-	components
-		navbar.js
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	server.js
-				</code></pre>
+├── <mark>.git</mark>
+├── components
+│   └── navbar.js
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+└── server.js
+				</pre>
 			</section>
 
 			<section>Зависимости проекта</section>
@@ -115,42 +105,38 @@ dogshop
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	.git
-	components
-		navbar.js
-	<mark>node_modules</mark>
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	<mark>package.json</mark>
-	server.js
-				</code></pre>
+├── .git
+├── components
+│   └── navbar.js
+├── <mark>node_modules</mark>
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── <mark>package.json</mark>
+└── server.js
+				</pre>
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	.git
-	components
-		navbar.js
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	<mark>.gitignore</mark>
-	package.json
-	server.js
-				</code></pre>
+├── .git
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── <mark>.gitignore</mark>
+├── package.json
+└── server.js
+				</pre>
 			</section>
 
 			<section>Сборка проекта</section>
@@ -160,25 +146,23 @@ dogshop
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	.git
-	<mark>build</mark>
-	components
-		navbar.js
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	.gitignore
-	package.json
-	server.js
-	<mark>webpack.config.js</mark>
-				</code></pre>
+├── .git
+├── <mark>build</mark>
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── .gitignore
+├── package.json
+├── server.js
+└── <mark>webpack.config.js</mark>
+				</pre>
 			</section>
 
 			<section>
@@ -186,26 +170,24 @@ dogshop
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	.git
-	build
-	components
-		navbar.js
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	.gitignore
-	<mark>babel.config.js</mark>
-	package.json
-	server.js
-	webpack.config.js
-				</code></pre>
+├── .git
+├── build
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── .gitignore
+├── <mark>babel.config.js</mark>
+├── package.json
+├── server.js
+└── webpack.config.js
+				</pre>
 			</section>
 
 			<section>Форматирование кода</section>
@@ -215,27 +197,25 @@ dogshop
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	.git
-	build
-	components
-		navbar.js
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	.gitignore
-	<mark>.prettierrc</mark>
-	babel.config.js
-	package.json
-	server.js
-	webpack.config.js
-				</code></pre>
+├── .git
+├── build
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── .gitignore
+├── <mark>.prettierrc</mark>
+├── babel.config.js
+├── package.json
+├── server.js
+└── webpack.config.js
+				</pre>
 			</section>
 
 			<section>Проверка кода</section>
@@ -245,28 +225,26 @@ dogshop
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	.git
-	build
-	components
-		navbar.js
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	<mark>.eslintrc.json</mark>
-	.gitignore
-	.prettierrc
-	babel.config.js
-	package.json
-	server.js
-	webpack.config.js
-				</code></pre>
+├── .git
+├── build
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── <mark>.eslintrc.json</mark>
+├── .gitignore
+├── .prettierrc
+├── babel.config.js
+├── package.json
+├── server.js
+└── webpack.config.js
+				</pre>
 			</section>
 
 			<section>Тестирование кода</section>
@@ -276,29 +254,27 @@ dogshop
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	.git
-	build
-	components
-		navbar.js
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	.eslintrc.json
-	.gitignore
-	.prettierrc
-	babel.config.js
-	package.json
-	server.js
-	<mark>test.js</mark>
-	webpack.config.js
-				</code></pre>
+├── .git
+├── build
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc
+├── babel.config.js
+├── <mark>jest.config.js</mark>
+├── package.json
+├── server.js
+└── webpack.config.js
+				</pre>
 			</section>
 
 			<section>Деплой проекта</section>
@@ -308,85 +284,113 @@ dogshop
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 dogshop
-	.git
-	build
-	components
-		navbar.js
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	.eslintrc.json
-	.gitignore
-	.prettierrc
-	babel.config.js
-	package.json
-	<mark>playbook.yml</mark>
-	server.js
-	test.js
-	webpack.config.js
-				</code></pre>
+├── .git
+├── build
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── <mark>playbook.yml</mark>
+├── server.js
+└── webpack.config.js
+				</pre>
+			</section>
+
+			<section>Автоматизация проекта</section>
+
+			<section>
+				<img src="static/gitlab.png" />
+			</section>
+
+			<section>
+				<pre>
+dogshop
+├── .git
+├── build
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── .eslintrc.json
+├── .gitignore
+├── <mark>.gitlab-ci.yml</mark>
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── playbook.yml
+├── server.js
+└── webpack.config.js
+				</pre>
 			</section>
 
 			<section>Второй проект</section>
 
 			<section>
 				<div style="display: flex;">
-					<pre><code data-trim data-noescape>
+					<pre>
 dogshop
-	.git
-	build
-	components
-		navbar.js
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	utils
-		phoneNumber.js
-	.eslintrc.json
-	.gitignore
-	.prettierrc
-	babel.config.js
-	package.json
-	playbook.yml
-	server.js
-	test.js
-	webpack.config.js
-					</code></pre>
+├── .git
+├── build
+├── components
+│   └── navbar.js
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── utils
+│   └── phoneNumber.js
+├── .eslintrc.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── playbook.yml
+├── server.js
+└── webpack.config.js
+					</pre>
 
-					<pre><code data-trim data-noescape>
+					<pre>
 <mark>catshop</mark>
-	<mark>.git</mark>
-	<mark>build</mark>
-	<mark>components</mark>
-		<mark>navbar.js</mark>
-	<mark>node_modules</mark>
-	<mark>pages</mark>
-		<mark>index.js</mark>
-		<mark>about.js</mark>
-	<mark>static</mark>
-		<mark>favicon.ico</mark>
-	<mark>utils</mark>
-		<mark>phoneNumber.js</mark>
-	<mark>.eslintrc.json</mark>
-	<mark>.gitignore</mark>
-	<mark>.prettierrc</mark>
-	<mark>babel.config.js</mark>
-	<mark>package.json</mark>
-	<mark>playbook.yml</mark>
-	<mark>server.js</mark>
-	<mark>test.js</mark>
-	<mark>webpack.config.js</mark>
-					</code></pre>
+├── <mark>.git</mark>
+├── <mark>build</mark>
+├── <mark>components</mark>
+│   └── <mark>navbar.js</mark>
+├── <mark>node_modules</mark>
+├── <mark>pages</mark>
+│   ├── <mark>index.js</mark>
+│   └── <mark>about.js</mark>
+├── <mark>utils</mark>
+│   └── <mark>phoneNumber.js</mark>
+├── <mark>.eslintrc.json</mark>
+├── <mark>.gitignore</mark>
+├── <mark>.gitlab-ci.yml</mark>
+├── <mark>.prettierrc</mark>
+├── <mark>babel.config.js</mark>
+├── <mark>jest.config.js</mark>
+├── <mark>package.json</mark>
+├── <mark>playbook.yml</mark>
+├── <mark>server.js</mark>
+└── <mark>webpack.config.js</mark>
+					</pre>
 				</div>
 			</section>
 
@@ -398,106 +402,110 @@ dogshop
 
 			<section>
 				<div style="display: flex;">
-					<pre><code data-trim data-noescape>
+					<pre>
 dogshop
-	.git
-	build
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	.eslintrc.json
-	.gitignore
-	<mark>.npmrc</mark>
-	.prettierrc
-	babel.config.js
-	package.json
-	playbook.yml
-	server.js
-	test.js
-	webpack.config.js
-					</code></pre>
+├── .git
+├── build
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── .eslintrc.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── <mark>.npmrc</mark>
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── playbook.yml
+├── server.js
+└── webpack.config.js
+					</pre>
 
-					<pre><code data-trim data-noescape>
+					<pre>
 catshop
-	.git
-	build
-	node_modules
-	pages
-		index.js
-		about.js
-	static
-		favicon.ico
-	.eslintrc.json
-	.gitignore
-	<mark>.npmrc</mark>
-	.prettierrc
-	babel.config.js
-	package.json
-	playbook.yml
-	server.js
-	test.js
-	webpack.config.js
-					</code></pre>
+├── .git
+├── build
+├── node_modules
+├── pages
+│   ├── index.js
+│   └── about.js
+├── .eslintrc.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── <mark>.npmrc</mark>
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── playbook.yml
+├── server.js
+└── webpack.config.js
+					</pre>
 				</div>
 			</section>
 
 			<section>
 				<div style="display: flex;">
-					<pre><code data-trim data-noescape>
+					<pre>
 components
-	.git
-	navbar
-		index.js
-	node_modules
-	.eslintrc.json
-	.gitignore
-	.npmrc
-	.prettierrc
-	babel.config.js
-	package.json
-	test.js
-	webpack.config.js
-					</code></pre>
+├── .git
+├── navbar
+│   └── index.js
+├── node_modules
+├── .eslintrc.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── .npmrc
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── playbook.yml
+└── webpack.config.js
+					</pre>
 
-					<pre><code data-trim data-noescape>
+					<pre>
 utils
-	.git
-	node_modules
-	phoneNumber
-		index.js
-	.eslintrc.json
-	.gitignore
-	.npmrc
-	.prettierrc
-	babel.config.js
-	package.json
-	test.js
-	webpack.config.js
-					</code></pre>
+├── .git
+├── node_modules
+├── phoneNumber
+│   └── index.js
+├── .eslintrc.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── .npmrc
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── playbook.yml
+└── webpack.config.js
+					</pre>
 				</div>
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 libs
-	.git
-	components
-		navbar.js
-	node_modules
-	utils
-		phoneNumber.js
-	.eslintrc.json
-	.gitignore
-	.npmrc
-	.prettierrc
-	babel.config.js
-	package.json
-	test.js
-	webpack.config.js
-				</code></pre>
+├── .git
+├── components
+│   └── navbar.js
+├── node_modules
+├── utils
+│   └── phoneNumber.js
+├── .eslintrc.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── .npmrc
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── package.json
+├── playbook.yml
+└── webpack.config.js
+				</pre>
 			</section>
 
 			<section>Управление проектами</section>
@@ -507,30 +515,55 @@ libs
 			</section>
 
 			<section>
-				<pre><code data-trim data-noescape>
+				<pre>
 libs
-	.git
-	node_modules
-	<mark>packages</mark>
-		<mark>components</mark>
-			<mark>navbar.js</mark>
-			<mark>node_modules</mark>
-			<mark>package.json</mark>
-			<mark>test.js</mark>
-		<mark>utils</mark>
-			<mark>node_modules</mark>
-			<mark>package.json</mark>
-			<mark>phoneNumber.js</mark>
-			<mark>test.js</mark>
-	.eslintrc.json
-	.gitignore
-	.npmrc
-	.prettierrc
-	babel.config.js
-	<mark>lerna.json</mark>
-	package.json
-	webpack.config.js
-				</code></pre>
+├── .git
+├── node_modules
+├── <mark>packages</mark>
+│   ├── <mark>components</mark>
+│   │   ├── <mark>navbar.js</mark>
+│   │   ├── <mark>node_modules</mark>
+│   │   └── <mark>package.json</mark>
+│   └── <mark>utils</mark>
+│       ├── <mark>node_modules</mark>
+│       ├── <mark>package.json</mark>
+│       └── <mark>phoneNumber.js</mark>
+├── .eslintrc.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── .npmrc
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── <mark>lerna.json</mark>
+├── package.json
+├── playbook.yml
+└── webpack.config.js
+				</pre>
+			</section>
+
+			<section>
+				<pre>
+libs
+├── .git
+├── node_modules
+├── packages
+│   ├── <mark>catshop</mark>
+│   ├── components
+│   ├── <mark>dogshop</mark>
+│   └── utils
+├── .eslintrc.json
+├── .gitignore
+├── .gitlab-ci.yml
+├── .npmrc
+├── .prettierrc
+├── babel.config.js
+├── jest.config.js
+├── lerna.json
+├── package.json
+├── playbook.yml
+└── webpack.config.js
+				</pre>
 			</section>
 		</div>
 	</div>
